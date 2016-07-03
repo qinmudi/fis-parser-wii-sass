@@ -4,7 +4,30 @@ fis-parser-wii-sass
 ## 特色
 1、sass预编译无需引入variables和mixins  
 2、根据模块自动分发，h5对应找h5的variables和mixins，web自动找web端variables和mixins  
-3、后续版本支持 fis-conf.json 扩展自定义variables和mixins路径支持  
+3、支持自定义variables和mixins  
+4、下一版本会支持多variables和多mixins支持，如下所示：
+```
+variables: {
+    mobile: [
+    	'static/ui/wii-h5/scss/variables1.scss',
+    	'static/ui/wii-h5/scss/variables2.scss'
+    ],
+    web: [
+    	'static/ui/wii-web/scss/settings/_settings1.scss',
+    	'static/ui/wii-web/scss/settings/_settings2.scss'
+    ]
+},
+mixins: {
+    mobile: [
+    	'static/ui/wii-h5/scss/mixins1.scss',
+    	'static/ui/wii-h5/scss/mixins2.scss'
+    ],
+    web: [
+    	'static/ui/wii-web/scss/util/_mixins1.scss',
+    	'static/ui/wii-web/scss/util/_mixins2.scss'
+    ]
+}
+```
 
 ## 说明文档
 - 如何使用
