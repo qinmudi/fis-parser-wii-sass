@@ -1,0 +1,24 @@
+{
+  "name": "fis-parser-wii-sass",
+  "version": "1.0.0",
+  "description": "sass parse for wii projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qinmudi/fis-parser-wii-sass.git"
+  },
+  "keywords": [
+    "fis",
+    "sass",
+    "wii"
+  ],
+  "author": "qinmudi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qinmudi/fis-parser-wii-sass/issues"
+  },
+  "homepage": "https://github.com/qinmudi/fis-parser-wii-sass#readme"
+}
