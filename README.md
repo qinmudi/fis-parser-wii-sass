@@ -2,9 +2,9 @@
 fis-parser-wii-sass
 
 ## 特色
-1、sass预编译无需引入variables和mixins
-2、根据模块自动分发，h5对应找h5的variables和mixins，web自动找web端variables和mixins
-3、后续版本支持 fis-conf.json 扩展自定义variables和mixins路径支持
+1、sass预编译无需引入variables和mixins  
+2、根据模块自动分发，h5对应找h5的variables和mixins，web自动找web端variables和mixins  
+3、后续版本支持 fis-conf.json 扩展自定义variables和mixins路径支持  
 
 ## 说明文档
 - 如何使用
