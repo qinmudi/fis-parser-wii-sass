@@ -103,6 +103,8 @@ var localConf = {
 }
 
 function fixImport(content, file, conf) {
+    var myConf = fis.util.merge(localConf, conf);
+
     var renderName = 'mobile';
 
     if(file.origin.indexOf('h5')!=-1){
@@ -111,8 +113,8 @@ function fixImport(content, file, conf) {
         renderName = 'web';
     }
 
-    var variables = '@import "'+localConf['variables'][renderName]+'";\n',
-        mixins = '@import "'+localConf['mixins'][renderName]+'";\n';
+    var variables = '@import "'+myConf['variables'][renderName]+'";\n',
+        mixins = '@import "'+myConf['mixins'][renderName]+'";\n';
 
     if (/(?:@import\s([\s\S]*?)(?:\n|$)(?!\s+[^{@]*\n))/ig.test(content)) {
         content = variables + content;
@@ -131,7 +133,7 @@ function fixImport(content, file, conf) {
             content = mixins + content;
         }
     }
-
+    
     return content;
 }
 
